@@ -55,7 +55,6 @@ class RecyclerView : AppCompatActivity() {
         data.add(DataModel("Ritik","bsdakasfhasfhsdfhdjsvfgdsvfhjdscsritik keshrikjabrkjsaf fs fdsbfjhs f dsf   qrofdjhsbfhsdf hfhaef",R.drawable.ic_launcher_foreground))
         data.add(DataModel("Ritik","bsdakasfhasfhsdfhdjsvfgdsvfhjdscsritik keshrikjabrkjsaf fs fdsbfjhs f dsf   qrofdjhsbfhsdf hfhaef",R.drawable.ic_launcher_foreground))
 
-//        val adapter =LayoutAdapter(applicationContext, data)
         layoutAdapter.setDataList(data)
     }
 }

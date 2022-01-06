@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.ListView.ListView
 import com.example.myapplication.fragmentLifecycle.FragmentLifecycle
 import com.example.myapplication.layoutManager.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -39,6 +40,11 @@ class MainActivity : AppCompatActivity() {
 
         fragment_lifecycle.setOnClickListener {
             intent = Intent(this, FragmentLifecycle::class.java)
+            startActivity(intent)
+        }
+
+        listview.setOnClickListener{
+            intent = Intent(this, ListView::class.java)
             startActivity(intent)
         }
     }

@@ -10,13 +10,11 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 
-class LayoutAdapter(val applicationContext: Context) :
-    RecyclerView.Adapter<LayoutAdapter.ViewHolder>() {
+class LayoutAdapter(val context: Context) : RecyclerView.Adapter<LayoutAdapter.ViewHolder>() {
 
     private var dataList = emptyList<DataModel>()
-    internal fun setDataList(dataList: List<DataModel>) {
+    fun setDataList(dataList: List<DataModel>) {
         this.dataList = dataList
-
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -26,8 +24,7 @@ class LayoutAdapter(val applicationContext: Context) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.layout_manager_layout, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.layout_manager_layout, parent, false)
         return ViewHolder(view)
     }
 
@@ -36,9 +33,8 @@ class LayoutAdapter(val applicationContext: Context) :
         holder.image.setImageResource(data.image)
         holder.name.text = data.name
         holder.details.text = data.details
-
         holder.image.setOnClickListener(View.OnClickListener {
-            Toast.makeText(applicationContext, "fffff" + position, Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "$position", Toast.LENGTH_SHORT).show()
 
         })
     }

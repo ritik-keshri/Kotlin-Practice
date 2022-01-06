@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".fragmentLifecycle.FragmentLifecycle"
+            android:name=".ListView.ListView"
             android:exported="false" />
         <activity
-            android:name=".layoutManager"
+            android:name=".fragmentLifecycle.FragmentLifecycle"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"

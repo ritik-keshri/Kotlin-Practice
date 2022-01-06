@@ -1,0 +1,24 @@
+package com.example.myapplication.ListView
+
+import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.ListView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.R
+
+class ListView : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_list_view)
+
+        val listView: ListView = findViewById(R.id.list)
+        val names = arrayOf("hjdsjhb", "hjdsjhb", "hjdsjhb", "hjdsjhb", "hjdsjhb")
+        val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_activated_1, names)
+
+        listView.adapter = adapter
+        listView.setOnItemClickListener { adapterView, view, i, l ->
+            Toast.makeText(applicationContext, "askjsd", Toast.LENGTH_SHORT).show()
+        }
+    }
+}

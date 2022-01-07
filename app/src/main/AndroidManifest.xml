@@ -12,7 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".ListView.ListView"
+            android:name=".firebase.DeleteData"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.UpdateData"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.ReadData"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.CreateData"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.Firebase"
+            android:exported="false" />
+        <activity
+            android:name=".listView.ListView"
             android:exported="false" />
         <activity
             android:name=".fragmentLifecycle.FragmentLifecycle"

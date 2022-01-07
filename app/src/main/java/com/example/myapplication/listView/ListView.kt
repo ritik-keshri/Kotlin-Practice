@@ -1,4 +1,4 @@
-package com.example.myapplication.ListView
+package com.example.myapplication.listView
 
 import android.os.Bundle
 import android.widget.ArrayAdapter

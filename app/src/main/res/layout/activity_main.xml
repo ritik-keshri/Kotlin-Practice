@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="Fragment Lifecycle"
+        android:text="Fragment LC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mssg" />
 
@@ -64,9 +64,19 @@
         android:id="@+id/listview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:text="ListView"
         app:layout_constraintBaseline_toBaselineOf="@+id/fragment_lifecycle"
         app:layout_constraintStart_toEndOf="@+id/fragment_lifecycle" />
+
+    <Button
+        android:id="@+id/firebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="4dp"
+        android:text="Firebase"
+        app:layout_constraintStart_toEndOf="@+id/listview"
+        app:layout_constraintTop_toBottomOf="@+id/layoutManager" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

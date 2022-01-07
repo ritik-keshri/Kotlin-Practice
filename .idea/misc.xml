@@ -3,13 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_create_data.xml" value="0.152" />
+        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_delete_data.xml" value="0.11979166666666667" />
+        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_firebase.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_fragment_lifecycle.xml" value="0.176" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_hobbies.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_layout_manager.xml" value="0.24818840579710144" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_list_view.xml" value="0.23143115942028986" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_read_data.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_recycler_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_update_data.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_fr1.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/layout_manager_layout.xml" value="0.24818840579710144" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/list_items.xml" value="0.1528436018957346" />

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Retrofit.Retrofit"
+            android:exported="false" />
+        <activity
             android:name=".firebase.DeleteData"
             android:exported="false" />
         <activity

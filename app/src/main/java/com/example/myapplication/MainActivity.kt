@@ -5,10 +5,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.Retrofit.Retrofit
 import com.example.myapplication.firebase.Firebase
-import com.example.myapplication.listView.ListView
 import com.example.myapplication.fragmentLifecycle.FragmentLifecycle
 import com.example.myapplication.layoutManager.RecyclerView
+import com.example.myapplication.listView.ListView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -44,13 +45,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        listview.setOnClickListener{
+        listview.setOnClickListener {
             intent = Intent(this, ListView::class.java)
             startActivity(intent)
         }
 
-        firebase.setOnClickListener{
-            intent = Intent(this,Firebase::class.java)
+        firebase.setOnClickListener {
+            intent = Intent(this, Firebase::class.java)
+            startActivity(intent)
+        }
+
+        retrofit.setOnClickListener {
+            intent = Intent(this, Retrofit::class.java)
             startActivity(intent)
         }
     }

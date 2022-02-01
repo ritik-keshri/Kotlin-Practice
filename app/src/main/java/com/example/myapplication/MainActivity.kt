@@ -10,6 +10,7 @@ import com.example.myapplication.firebase.Firebase
 import com.example.myapplication.fragmentLifecycle.FragmentLifecycle
 import com.example.myapplication.layoutManager.RecyclerView
 import com.example.myapplication.listView.ListView
+import com.example.myapplication.viewModel.ViewModelActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -58,6 +59,10 @@ class MainActivity : AppCompatActivity() {
         retrofit.setOnClickListener {
             intent = Intent(this, Retrofit::class.java)
             startActivity(intent)
+        }
+
+        viewModel.setOnClickListener {
+            startActivity(Intent(this, ViewModelActivity::class.java))
         }
     }
 

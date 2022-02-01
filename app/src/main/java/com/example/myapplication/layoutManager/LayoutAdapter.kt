@@ -35,7 +35,6 @@ class LayoutAdapter(val context: Context) : RecyclerView.Adapter<LayoutAdapter.V
         holder.details.text = data.details
         holder.image.setOnClickListener(View.OnClickListener {
             Toast.makeText(context, "$position", Toast.LENGTH_SHORT).show()
-
         })
     }
 

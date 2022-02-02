@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".lifeCycleAwareComponent.LifeCycleAwareActivity"
+            android:exported="false" />
+        <activity
             android:name=".livedata.LiveDataActivity"
             android:exported="false" />
         <activity

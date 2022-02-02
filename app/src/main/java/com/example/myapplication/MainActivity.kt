@@ -9,6 +9,7 @@ import com.example.myapplication.Retrofit.Retrofit
 import com.example.myapplication.firebase.Firebase
 import com.example.myapplication.fragmentLifecycle.FragmentLifecycle
 import com.example.myapplication.layoutManager.RecyclerView
+import com.example.myapplication.lifeCycleAwareComponent.LifeCycleAwareActivity
 import com.example.myapplication.listView.ListView
 import com.example.myapplication.livedata.LiveDataActivity
 import com.example.myapplication.viewModel.ViewModelActivity
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.e(TAG, "onCreate: ")
+//        Log.e(TAG, "onCreate: ")
 
         mssg.setOnClickListener {
             val msg: String = userMsg.text.toString()
@@ -69,35 +70,39 @@ class MainActivity : AppCompatActivity() {
         liveData.setOnClickListener {
             startActivity(Intent(this, LiveDataActivity::class.java))
         }
+
+        lifeCycleAware.setOnClickListener {
+            startActivity(Intent(this, LifeCycleAwareActivity::class.java))
+        }
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.e(TAG, "onStart: ")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.e(TAG, "onResume: ")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.e(TAG, "onPause: ")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.e(TAG, "onStop: ")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Log.e(TAG, "onRestart: ")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.e(TAG, "onDestroy: ")
-    }
+//    override fun onStart() {
+//        super.onStart()
+//        Log.e(TAG, "onStart: ")
+//    }
+//
+//    override fun onResume() {
+//        super.onResume()
+//        Log.e(TAG, "onResume: ")
+//    }
+//
+//    override fun onPause() {
+//        super.onPause()
+//        Log.e(TAG, "onPause: ")
+//    }
+//
+//    override fun onStop() {
+//        super.onStop()
+//        Log.e(TAG, "onStop: ")
+//    }
+//
+//    override fun onRestart() {
+//        super.onRestart()
+//        Log.e(TAG, "onRestart: ")
+//    }
+//
+//    override fun onDestroy() {
+//        super.onDestroy()
+//        Log.e(TAG, "onDestroy: ")
+//    }
 }

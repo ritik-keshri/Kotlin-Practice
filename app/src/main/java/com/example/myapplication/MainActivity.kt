@@ -10,6 +10,7 @@ import com.example.myapplication.firebase.Firebase
 import com.example.myapplication.fragmentLifecycle.FragmentLifecycle
 import com.example.myapplication.layoutManager.RecyclerView
 import com.example.myapplication.listView.ListView
+import com.example.myapplication.livedata.LiveDataActivity
 import com.example.myapplication.viewModel.ViewModelActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -63,6 +64,10 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.setOnClickListener {
             startActivity(Intent(this, ViewModelActivity::class.java))
+        }
+
+        liveData.setOnClickListener {
+            startActivity(Intent(this, LiveDataActivity::class.java))
         }
     }
 

@@ -12,6 +12,7 @@ import com.example.myapplication.layoutManager.RecyclerView
 import com.example.myapplication.lifeCycleAwareComponent.LifeCycleAwareActivity
 import com.example.myapplication.listView.ListView
 import com.example.myapplication.livedata.LiveDataActivity
+import com.example.myapplication.mvvmWithRoomDatabase.MVVM
 import com.example.myapplication.roomDatabase.RoomDatabaseActivity
 import com.example.myapplication.viewModel.ViewModelActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -78,6 +79,10 @@ class MainActivity : AppCompatActivity() {
 
         roomDatabase.setOnClickListener {
             startActivity(Intent(this, RoomDatabaseActivity::class.java))
+        }
+
+        mvvmWithRoomDb.setOnClickListener {
+            startActivity(Intent(this, MVVM::class.java))
         }
     }
 

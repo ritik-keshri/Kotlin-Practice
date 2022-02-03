@@ -12,6 +12,7 @@ import com.example.myapplication.layoutManager.RecyclerView
 import com.example.myapplication.lifeCycleAwareComponent.LifeCycleAwareActivity
 import com.example.myapplication.listView.ListView
 import com.example.myapplication.livedata.LiveDataActivity
+import com.example.myapplication.roomDatabase.RoomDatabaseActivity
 import com.example.myapplication.viewModel.ViewModelActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -74,35 +75,39 @@ class MainActivity : AppCompatActivity() {
         lifeCycleAware.setOnClickListener {
             startActivity(Intent(this, LifeCycleAwareActivity::class.java))
         }
+
+        roomDatabase.setOnClickListener {
+            startActivity(Intent(this, RoomDatabaseActivity::class.java))
+        }
     }
 
-//    override fun onStart() {
-//        super.onStart()
-//        Log.e(TAG, "onStart: ")
-//    }
-//
-//    override fun onResume() {
-//        super.onResume()
-//        Log.e(TAG, "onResume: ")
-//    }
-//
-//    override fun onPause() {
-//        super.onPause()
-//        Log.e(TAG, "onPause: ")
-//    }
-//
-//    override fun onStop() {
-//        super.onStop()
-//        Log.e(TAG, "onStop: ")
-//    }
-//
-//    override fun onRestart() {
-//        super.onRestart()
-//        Log.e(TAG, "onRestart: ")
-//    }
-//
-//    override fun onDestroy() {
-//        super.onDestroy()
-//        Log.e(TAG, "onDestroy: ")
-//    }
+    override fun onStart() {
+        super.onStart()
+        Log.e(TAG, "onStart: ")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.e(TAG, "onResume: ")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.e(TAG, "onPause: ")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.e(TAG, "onStop: ")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.e(TAG, "onRestart: ")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e(TAG, "onDestroy: ")
+    }
 }

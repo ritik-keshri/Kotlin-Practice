@@ -16,7 +16,7 @@ class ListView : AppCompatActivity() {
         val names = arrayOf("hjdsjhb", "hjdsjhb", "hjdsjhb", "hjdsjhb", "hjdsjhb")
         listView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_activated_1, names)
 
-        listView.setOnItemClickListener { adapterView, view, i, l ->
+        listView.setOnItemClickListener { _, _, _, _ ->
             Toast.makeText(applicationContext, "askjsd", Toast.LENGTH_SHORT).show()
         }
     }

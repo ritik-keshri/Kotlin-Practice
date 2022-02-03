@@ -93,10 +93,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="28dp"
         android:text="ViewModel"
         app:layout_constraintEnd_toStartOf="@+id/liveData"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/retrofit"
         app:layout_constraintTop_toBottomOf="@+id/listview" />
 
@@ -114,9 +115,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="11dp"
         android:text="LifeCycle Aware"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/retrofit" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/roomDatabase"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/roomDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Room Database"
+        app:layout_constraintStart_toEndOf="@+id/lifeCycleAware"
+        app:layout_constraintTop_toBottomOf="@+id/viewModel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

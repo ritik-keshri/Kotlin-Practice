@@ -21,15 +21,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/mssg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="12dp"
         android:text="Send msg"
         app:layout_constraintBaseline_toBaselineOf="@+id/share"
         app:layout_constraintEnd_toStartOf="@+id/share" />
-
 
     <Button
         android:id="@+id/share"
@@ -45,7 +45,7 @@
         android:id="@+id/layoutManager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
+        android:layout_marginStart="228dp"
         android:text="Layout Manager"
         app:layout_constraintBaseline_toBaselineOf="@+id/share"
         app:layout_constraintStart_toStartOf="parent" />
@@ -114,7 +114,7 @@
         android:id="@+id/lifeCycleAware"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="4dp"
         android:text="LifeCycle Aware"
         app:layout_constraintBaseline_toBaselineOf="@+id/roomDatabase"
         app:layout_constraintStart_toStartOf="parent" />
@@ -133,9 +133,18 @@
         android:id="@+id/mvvmWithRoomDb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="4dp"
         android:text="MVVM With RoomDatabase"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lifeCycleAware" />
+
+    <Button
+        android:id="@+id/listAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="List Adapter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roomDatabase" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

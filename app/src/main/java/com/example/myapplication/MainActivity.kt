@@ -10,6 +10,7 @@ import com.example.myapplication.firebase.Firebase
 import com.example.myapplication.fragmentLifecycle.FragmentLifecycle
 import com.example.myapplication.layoutManager.RecyclerView
 import com.example.myapplication.lifeCycleAwareComponent.LifeCycleAwareActivity
+import com.example.myapplication.listAdapter.ListAdapter
 import com.example.myapplication.listView.ListView
 import com.example.myapplication.livedata.LiveDataActivity
 import com.example.myapplication.mvvmWithRoomDatabase.MVVM
@@ -83,6 +84,10 @@ class MainActivity : AppCompatActivity() {
 
         mvvmWithRoomDb.setOnClickListener {
             startActivity(Intent(this, MVVM::class.java))
+        }
+
+        listAdapter.setOnClickListener {
+            startActivity(Intent(this, ListAdapter::class.java))
         }
     }
 

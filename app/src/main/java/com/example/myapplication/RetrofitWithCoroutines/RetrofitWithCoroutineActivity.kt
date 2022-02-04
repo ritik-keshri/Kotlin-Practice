@@ -14,13 +14,12 @@ class RetrofitWithCoroutineActivity : AppCompatActivity() {
 
         val quotesApi = RetrofitHelper.getInstance().create(QuotesAPI::class.java)
         GlobalScope.launch {
+            //Completing the api link
             val result = quotesApi.getQuotes(1)
-            if (result != null) {
-                val quoteList = result.body()
-                if (quoteList != null) {
-                    quoteList.results?.forEach {
-                        Log.e("TAG", "Quote: " + it.content)
-                    }
+            val quoteList = result.body()
+            if (quoteList != null) {
+                quoteList.results?.forEach {
+                    Log.e("TAG", "Quote: " + it.content)
                 }
             }
         }

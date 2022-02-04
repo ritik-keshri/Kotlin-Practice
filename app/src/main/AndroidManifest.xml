@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".MVVMWithRetrofit.MVVMWithRetrofit"
+            android:exported="false" />
+        <activity
             android:name=".RetrofitWithCoroutines.RetrofitWithCoroutineActivity"
             android:exported="false" />
         <activity

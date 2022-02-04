@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.MVVMWithRetrofit.MVVMWithRetrofit
 import com.example.myapplication.Retrofit.Retrofit
 import com.example.myapplication.RetrofitWithCoroutines.RetrofitWithCoroutineActivity
 import com.example.myapplication.firebase.Firebase
@@ -93,6 +94,10 @@ class MainActivity : AppCompatActivity() {
 
         retrofitWithCoroutine.setOnClickListener {
             startActivity(Intent(this, RetrofitWithCoroutineActivity::class.java))
+        }
+
+        mvvmWithRetrofit.setOnClickListener {
+            startActivity(Intent(this, MVVMWithRetrofit::class.java))
         }
     }
 

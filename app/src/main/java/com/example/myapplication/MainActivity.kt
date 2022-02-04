@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.Retrofit.Retrofit
+import com.example.myapplication.RetrofitWithCoroutines.RetrofitWithCoroutineActivity
 import com.example.myapplication.firebase.Firebase
 import com.example.myapplication.fragmentLifecycle.FragmentLifecycle
 import com.example.myapplication.layoutManager.RecyclerView
@@ -88,6 +89,10 @@ class MainActivity : AppCompatActivity() {
 
         listAdapter.setOnClickListener {
             startActivity(Intent(this, ListAdapter::class.java))
+        }
+
+        retrofitWithCoroutine.setOnClickListener {
+            startActivity(Intent(this, RetrofitWithCoroutineActivity::class.java))
         }
     }
 

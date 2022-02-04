@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.MVVM.MVVMActivity
 import com.example.myapplication.MVVMWithRetrofit.MVVMWithRetrofit
 import com.example.myapplication.Retrofit.Retrofit
 import com.example.myapplication.RetrofitWithCoroutines.RetrofitWithCoroutineActivity
@@ -98,6 +99,10 @@ class MainActivity : AppCompatActivity() {
 
         mvvmWithRetrofit.setOnClickListener {
             startActivity(Intent(this, MVVMWithRetrofit::class.java))
+        }
+
+        mvvm.setOnClickListener {
+            startActivity(Intent(this, MVVMActivity::class.java))
         }
     }
 

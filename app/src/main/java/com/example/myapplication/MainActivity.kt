@@ -108,31 +108,31 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.e(TAG, "onStart: ")
+        Log.e(TAG, "onStart: Activity")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.e(TAG, "onResume: ")
+        Log.e(TAG, "onResume: Activity")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.e(TAG, "onPause: ")
+        Log.e(TAG, "onPause: Activity")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.e(TAG, "onStop: ")
+        Log.e(TAG, "onStop: Activity")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.e(TAG, "onRestart: ")
+        Log.e(TAG, "onRestart: Activity")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.e(TAG, "onDestroy: ")
+        Log.e(TAG, "onDestroy: Activity")
     }
 }

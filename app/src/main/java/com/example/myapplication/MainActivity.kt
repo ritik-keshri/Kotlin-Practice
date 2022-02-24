@@ -4,6 +4,7 @@ import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.MVVM.MVVMActivity
 import com.example.myapplication.MVVMWithRetrofit.MVVMWithRetrofit
@@ -20,7 +21,9 @@ import com.example.myapplication.livedata.LiveDataActivity
 import com.example.myapplication.mvvmWithRoomDatabase.MVVM
 import com.example.myapplication.roomDatabase.RoomDatabaseActivity
 import com.example.myapplication.viewModel.ViewModelActivity
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.bottom_sheet_layout.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -106,8 +109,69 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, MVVMActivity::class.java))
         }
 
-        animation.setOnClickListener{
+        animation.setOnClickListener {
             startActivity(Intent(this, Animation::class.java))
+        }
+
+        bottomSheetLayout.setOnClickListener {
+            //Bottom Sheet Layout
+            val bottomSheetDialog = BottomSheetDialog(this)
+            bottomSheetDialog.setContentView(R.layout.bottom_sheet_layout)
+            bottomSheetDialog.setCanceledOnTouchOutside(true)
+            bottomSheetDialog.show()
+
+            bottomSheetDialog.edit.setOnClickListener {
+                bottomSheetDialog.dismiss()
+                Toast.makeText(this, "Edit", Toast.LENGTH_SHORT).show()
+            }
+
+            bottomSheetDialog.share_bottom_sheet.setOnClickListener {
+                bottomSheetDialog.dismiss()
+                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show()
+            }
+
+            bottomSheetDialog.upload.setOnClickListener {
+                bottomSheetDialog.dismiss()
+                Toast.makeText(this, "Upload", Toast.LENGTH_SHORT).show()
+            }
+
+            bottomSheetDialog.print.setOnClickListener {
+                bottomSheetDialog.dismiss()
+                Toast.makeText(this, "Print", Toast.LENGTH_SHORT).show()
+            }
+
+            //Bottom Sheet Layout with borders
+//            val dialog = Dialog(this)
+//            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+//            dialog.setContentView(R.layout.bottom_sheet_layout)
+//
+//            dialog.edit.setOnClickListener {
+//                Toast.makeText(this, "Edit", Toast.LENGTH_SHORT).show()
+//                dialog.dismiss()
+//            }
+//
+//            dialog.share_bottom_sheet.setOnClickListener {
+//                dialog.dismiss()
+//                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show()
+//            }
+//
+//            dialog.upload.setOnClickListener {
+//                dialog.dismiss()
+//                Toast.makeText(this, "Upload", Toast.LENGTH_SHORT).show()
+//            }
+//
+//            dialog.print.setOnClickListener {
+//                dialog.dismiss()
+//                Toast.makeText(this, "Print", Toast.LENGTH_SHORT).show()
+//            }
+//            dialog.show()
+//            dialog.window!!.setLayout(
+//                ViewGroup.LayoutParams.MATCH_PARENT,
+//                ViewGroup.LayoutParams.WRAP_CONTENT
+//            )
+//            dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+//            dialog.window!!.attributes.windowAnimations = R.style.BottomSheetAnimation
+//            dialog.window!!.setGravity(Gravity.BOTTOM)
         }
     }
 

@@ -184,5 +184,14 @@
         app:layout_constraintStart_toEndOf="@+id/mvvm"
         app:layout_constraintTop_toBottomOf="@+id/retrofitWithCoroutine" />
 
+    <Button
+        android:id="@+id/bottomSheetLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Bottom Sheet Layout"
+        app:layout_constraintStart_toEndOf="@+id/animation"
+        app:layout_constraintTop_toBottomOf="@+id/retrofitWithCoroutine" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

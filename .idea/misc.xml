@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/item_red.xml" value="0.151" />
+        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_animation.xml" value="0.25271739130434784" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_create_data.xml" value="0.152" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_delete_data.xml" value="0.11979166666666667" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_firebase.xml" value="0.22327898550724637" />
@@ -14,7 +15,7 @@
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_list_adapter.xml" value="0.25271739130434784" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_list_view.xml" value="0.23143115942028986" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_live_data.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.4839319470699433" />
+        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.6" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main3.xml" value="0.25271739130434784" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_mvvm.xml" value="0.25271739130434784" />
@@ -33,6 +34,8 @@
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item_view.xml" value="0.25271739130434784" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/layout_manager_layout.xml" value="0.24818840579710144" />
         <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/list_items.xml" value="0.72" />
+        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/scene1.xml" value="0.25271739130434784" />
+        <entry key="..\:/Users/RK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/scene2.xml" value="0.25271739130434784" />
       </map>
     </option>
   </component>

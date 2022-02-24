@@ -9,6 +9,7 @@ import com.example.myapplication.MVVM.MVVMActivity
 import com.example.myapplication.MVVMWithRetrofit.MVVMWithRetrofit
 import com.example.myapplication.Retrofit.Retrofit
 import com.example.myapplication.RetrofitWithCoroutines.RetrofitWithCoroutineActivity
+import com.example.myapplication.animation.Animation
 import com.example.myapplication.firebase.Firebase
 import com.example.myapplication.fragmentLifecycle.FragmentLifecycle
 import com.example.myapplication.layoutManager.RecyclerView
@@ -103,6 +104,10 @@ class MainActivity : AppCompatActivity() {
 
         mvvm.setOnClickListener {
             startActivity(Intent(this, MVVMActivity::class.java))
+        }
+
+        animation.setOnClickListener{
+            startActivity(Intent(this, Animation::class.java))
         }
     }
 

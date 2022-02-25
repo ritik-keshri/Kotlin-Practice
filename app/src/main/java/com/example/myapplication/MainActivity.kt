@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, MVVMActivity::class.java))
         }
 
-        animation.setOnClickListener {
+        transition.setOnClickListener {
             startActivity(Intent(this, Animation::class.java))
         }
 

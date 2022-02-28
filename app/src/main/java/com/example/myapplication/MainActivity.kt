@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.DynamicViewAdding.DynamicViewAdding
 import com.example.myapplication.MVVM.MVVMActivity
 import com.example.myapplication.MVVMWithRetrofit.MVVMWithRetrofit
 import com.example.myapplication.Retrofit.Retrofit
@@ -172,6 +173,12 @@ class MainActivity : AppCompatActivity() {
 //            dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 //            dialog.window!!.attributes.windowAnimations = R.style.BottomSheetAnimation
 //            dialog.window!!.setGravity(Gravity.BOTTOM)
+
+
+        }
+
+        dmcView.setOnClickListener {
+            startActivity(Intent(this,DynamicViewAdding::class.java))
         }
     }
 

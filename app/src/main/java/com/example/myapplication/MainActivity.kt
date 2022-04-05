@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.BroadcastReceiver.BroadcastReceiver
 import com.example.myapplication.DynamicViewAdding.DynamicViewAdding
 import com.example.myapplication.MVVM.MVVMActivity
 import com.example.myapplication.MVVMWithRetrofit.MVVMWithRetrofit
@@ -179,6 +180,10 @@ class MainActivity : AppCompatActivity() {
 
         dmcView.setOnClickListener {
             startActivity(Intent(this,DynamicViewAdding::class.java))
+        }
+
+        broadcastReceiver.setOnClickListener {
+            startActivity(Intent(this, BroadcastReceiver::class.java))
         }
     }
 

@@ -4,6 +4,7 @@ import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.BroadcastReceiver.BroadcastReceiver
@@ -24,6 +25,7 @@ import com.example.myapplication.mvvmWithRoomDatabase.MVVM
 import com.example.myapplication.roomDatabase.RoomDatabaseActivity
 import com.example.myapplication.viewModel.ViewModelActivity
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.bottom_sheet_layout.*
 
@@ -179,11 +181,22 @@ class MainActivity : AppCompatActivity() {
         }
 
         dmcView.setOnClickListener {
-            startActivity(Intent(this,DynamicViewAdding::class.java))
+            startActivity(Intent(this, DynamicViewAdding::class.java))
         }
 
         broadcastReceiver.setOnClickListener {
             startActivity(Intent(this, BroadcastReceiver::class.java))
+        }
+
+        snackbar.setOnClickListener {
+            Snackbar.make(findViewById(R.id.layoutView), "SnackBar", Snackbar.LENGTH_SHORT)
+                .setAction("Undo", View.OnClickListener {
+                    Snackbar.make(
+                        findViewById(R.id.layoutView),
+                        "Undo Successful",
+                        Snackbar.LENGTH_SHORT
+                    ).show()
+                }).show()
         }
     }
 

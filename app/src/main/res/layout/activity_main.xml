@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layoutView"
     tools:context=".MainActivity">
 
     <EditText
@@ -214,4 +215,13 @@
         android:text="Broadcast Receiver"
         app:layout_constraintStart_toEndOf="@id/dmcView"
         app:layout_constraintTop_toBottomOf="@+id/transition" />
+
+    <Button
+        android:id="@+id/snackbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Snackbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dmcView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

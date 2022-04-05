@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import android.content.ContentValues.TAG
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -190,13 +191,11 @@ class MainActivity : AppCompatActivity() {
 
         snackbar.setOnClickListener {
             Snackbar.make(findViewById(R.id.layoutView), "SnackBar", Snackbar.LENGTH_SHORT)
+                .setTextColor(Color.RED)
                 .setAction("Undo", View.OnClickListener {
-                    Snackbar.make(
-                        findViewById(R.id.layoutView),
-                        "Undo Successful",
-                        Snackbar.LENGTH_SHORT
-                    ).show()
-                }).show()
+                    Snackbar.make(findViewById(R.id.layoutView),"Undo Successful",Snackbar.LENGTH_SHORT).show()
+                }).setActionTextColor(Color.YELLOW).show()
+
         }
     }
 

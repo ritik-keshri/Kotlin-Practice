@@ -20,8 +20,8 @@ class RecyclerView : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(applicationContext)
-//        recyclerView.layoutManager = StaggeredGridLayoutManager(2,LinearLayoutManager.HORIZONTAL)
-//        recyclerView.layoutManager = StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL)
+//        recyclerView.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.HORIZONTAL)
+//        recyclerView.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
 //        recyclerView.layoutManager = LinearLayoutManager(applicationContext,LinearLayoutManager.HORIZONTAL,false)
 //        recyclerView.layoutManager = GridLayoutManager(applicationContext,2)
 

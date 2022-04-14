@@ -7,5 +7,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+<!--    It is used when staggered layout with horizontal is used-->
+<!--    android:layout_height="wrap_content" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
